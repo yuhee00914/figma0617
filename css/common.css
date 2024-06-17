@@ -1,0 +1,21 @@
+/*피그마의 라이브러리 공통클래스 만들어두었습니다 */
+:root{
+    --basecolor : #333;
+    --activecolor: #02AE74;
+    --pointcolor:#FF3D43;
+    --fontfamily: "note sans KR";
+}
+body{
+    color: var(--basecolor);
+    /* 네비폰트 */
+    font-family: var(--fontfamily);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.01125rem;
+}
+a{
+    color: var(--basecolor);
+    text-decoration: none;
+}
