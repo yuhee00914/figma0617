@@ -19,3 +19,100 @@ a{
     color: var(--basecolor);
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+ul, p, div, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 공통클래스 */
+.title{
+    color: #111;
+    font-size: 2.24rem;
+}
+.linkcss{
+    font-size: 1.125rem;
+}
+.activecolor{
+    color: var(--activecolor);
+}
+.pointcolor{
+    color: var(--pointcolor);
+}
+.activecolorbg{
+    background-color: var(--activecolor);
+}
+.container{
+    display: flex; 
+    width: 90rem;
+    margin: 0 auto;
+    /* height: 0.3125rem; */
+    align-items: center;
+    gap: 1.075rem;
+    flex-shrink: 0;
+}
+.search input{
+    display: block;
+    width: 30.875rem;
+    height: 5.1875rem;
+    border-radius: 100px;
+    border: 2px solid var(--pointcolor);
+    background: rgba(217, 217, 217, 0.00);
+}
+.utilmeun{
+    width: 39.4375rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+}
+.utilmeun ul{
+    display: flex;
+    width: 693px;
+    justify-content: flex-end; /* x축 */
+    align-items: center; /* y축 */
+    gap: 1.875rem;
+    flex-shrink: 0;
+}
+
+
+/* 클래스가 utilmenu안의 li태그 중에서
+클래스가 m인것을 찾아라
+찾았으면 그 안의 두번쨰 img태그 나타나지마 */
+.utilmeun li.m img:nth-child(2){
+    display:none;
+}
+.utilmeun li.m:hover img:nth-child(2){
+    display:block;
+}
+.utilmeun li.m:hover img:nth-child(1){
+    display:none;
+}
+
+.hd svg:hover path{
+    fill:#FF3D43;
+}
+/* .login svg path{
+    fill:#FF3D43;
+    transition: 0.5s;
+}  
+
+애니메이션!! (transition)
+넣을때 꼭 쌍으로 넣기 마우스 올렷을때/안올렷을때
+
+.login svg:hover path{
+    fill:#02AE74;
+} */
+
+.login {
+    background-color: #FF3D43;
+    padding: 15px;
+    border-radius: 10px;
+}
+.login path{
+    fill: white;
+}
+.login:hover {
+    background-color: #333;
+    transition: 0.5s;
+}
